@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #1c313a;
+  text-align: center;
+}
+
+.box button {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__ref a {
+  display: inline-flex;
+  gap: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: #1c313a;
+}
+
+.footer__ref .icon {
+  font-size: 14px;
+}

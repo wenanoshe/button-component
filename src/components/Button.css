@@ -1,0 +1,127 @@
+.btn {
+  --default: #e0e0e0;
+  --primary: #2962ff;
+  --secondary: #455a64;
+  --danger: #d32f2f;
+
+  --default-hover: #aeaeae;
+  --primary-hover: #0039cb;
+  --secondary-hover: #1c313a;
+  --danger-hover: #9a0007;
+
+  --white: #fff;
+  --blue: rgb(61, 90, 254, 1) /* #3D5AFE */;
+
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--default);
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  transition-duration: 200ms, 100ms;
+  transition-property: background-color, transform;
+  transition-timing-function: ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--default-hover);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn--noShadow {
+  box-shadow: none;
+}
+
+/* Variants */
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  box-shadow: none;
+}
+
+.btn--outline:hover,
+.btn--outline:focus,
+.btn--text:hover,
+.btn--text:focus {
+  background-color: #2962ff1a;
+}
+
+.btn--text {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--blue);
+}
+
+/* Disabled */
+.btn:disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #3f3f3f;
+  opacity: 0.5;
+}
+
+.btn:disabled:hover {
+  background-color: unset;
+}
+
+/* Icons */
+.btn__icon {
+  font-size: 16px;
+}
+
+/* Sizes */
+.btn--sm {
+  padding: 6px 12px;
+}
+
+.btn--lg {
+  padding: 11px 22px;
+}
+
+/* Color */
+
+.btn--primary,
+.btn--secondary,
+.btn--danger {
+  color: var(--white);
+}
+
+.btn--primary {
+  background-color: var(--primary);
+}
+.btn--secondary {
+  background-color: var(--secondary);
+}
+.btn--danger {
+  background-color: var(--danger);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--primary-hover);
+}
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background-color: var(--secondary-hover);
+}
+.btn--danger:hover,
+.btn--danger:focus {
+  background-color: var(--danger-hover);
+}
