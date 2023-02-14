@@ -4,6 +4,10 @@
   --secondary: #455a64;
   --danger: #d32f2f;
 
+  --primary-01: #2962ff15;
+  --secondary-01: #455a6415;
+  --danger-01: #d32f2f15;
+
   --default-hover: #aeaeae;
   --primary-hover: #0039cb;
   --secondary-hover: #1c313a;
@@ -55,6 +59,7 @@
   color: var(--blue);
   box-shadow: none;
 }
+
 
 .btn--outline:hover,
 .btn--outline:focus,
@@ -124,4 +129,61 @@
 .btn--danger:hover,
 .btn--danger:focus {
   background-color: var(--danger-hover);
+}
+
+.btn--primary.btn--outline,
+.btn--primary.btn--text,
+.btn--secondary.btn--outline,
+.btn--secondary.btn--text,
+.btn--danger.btn--outline,
+.btn--danger.btn--text {
+  background-color: transparent;
+}
+
+.btn--primary.btn--outline {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn--secondary.btn--outline {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn--danger.btn--outline {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn--primary.btn--text {
+  color: var(--primary);
+}
+
+.btn--secondary.btn--text {
+  color: var(--secondary);
+}
+
+.btn--danger.btn--text {
+  color: var(--danger);
+}
+
+.btn--primary.btn--outline:hover,
+.btn--primary.btn--outline:focus,
+.btn--primary.btn--text:hover,
+.btn--primary.btn--text:focus {
+  background-color: var(--primary-01);
+}
+
+.btn--secondary.btn--outline:hover,
+.btn--secondary.btn--outline:focus,
+.btn--secondary.btn--text:hover,
+.btn--secondary.btn--text:focus {
+  background-color: var(--secondary-01);
+}
+
+.btn--danger.btn--outline:hover,
+.btn--danger.btn--outline:focus,
+.btn--danger.btn--text:hover,
+.btn--danger.btn--text:focus {
+  background-color: var(--danger-01);
 }
